@@ -41,7 +41,7 @@ model {
   yhat=(betaAg*delta[ecoreg].*Ag.*pow(P,gammaAg*psi[ecoreg])+betaUrb_frt*delta[ecoreg].*Urb_frt.*pow(P,gammaUrb_frt*psi[ecoreg])+betaUrb_wst*delta[ecoreg].*Urb_wst.*pow(P,gammaUrb_wst*psi[ecoreg])+betaS*delta[ecoreg].*S.*pow(P,gammaS*psi[ecoreg])).* exp(-W*k) ;
   lyb=log(yhat+1)+alpha[wsd];
   ly ~ normal(lyb, sigma);  // likelihood
-/Priors 
+//Priors 
   k~ normal(6,3);
   betaAg~ normal(.046,.021);
   betaUrb_frt~ normal(.061,.04);
