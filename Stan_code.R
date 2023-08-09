@@ -63,6 +63,6 @@ sigma_delta~ normal(0,.1);
 data <- readRDS("./data.rds") #load annual input data set, if necessary
 #run the model (data is the list of data sets. For other parameters, return to the function description)
 model = stan(model_code=stanmodelcode, data=data, iter=iter, 
-                    warmup=warmup, thin=, chains=3,cores=3,
+                    warmup=warmup, thin= thin, chains=3,cores=3,
                     control = list(adapt_delta =adapt_delta ,max_treedepth =max_treedepth ))
 
