@@ -28,7 +28,7 @@ parameters {
   real <lower=0, upper = 5>gammaUrb_wst;        //Urban human waste PIC (unitless)
  real <lower=0, upper = 5>  gammaS;             //Soil PIC (unitless)
  vector <lower=0, upper = 2> [econum] psi;      //PIC-adjustment factor (unitless)
-  real <lower=0, upper = 15>  k;                //waterbody loss rate (unitless)
+  real <lower=0, upper = 20>  k;                //waterbody loss rate (unitless)
   real <lower=0, upper = 1>sigma_psi;           //PIC-adjustment factor SD
   real <lower=0, upper = 1>sigma_delta;         //EC-adjustment factor SD
   real<lower=0> sigma_wsd;                      //Random effect SD
