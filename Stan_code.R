@@ -1,3 +1,6 @@
+#Install and load the libraries
+library("rstan")
+library("rstudioapi")
 stanmodelcode= '
 data {
   int<lower=0> N;     // Number of data rows
